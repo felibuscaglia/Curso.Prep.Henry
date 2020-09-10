@@ -25,12 +25,12 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  array.push (array [array.length-1] + 1); 
-  return array;
+  var nuevoArray = [];
+  for(var i = 0; i < array.length; i++) {
+    nuevoArray[i] = array[i] + 1;
+  }
 
-
-   
-
+  return nuevoArray;
 
 }
 
@@ -39,6 +39,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // y devuelve el array
   // Tu código:
   array[array.length] = elemento
+  return array
   
 }
 
@@ -48,7 +49,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // Pista: usa el método `.unshift`
   // Tu código:
   array.unshift (elemento)
- 
+  return array 
 }
 
 function dePalabrasAFrase(palabras) {
@@ -80,12 +81,11 @@ function agregarNumeros(numeros) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-  var suma = 0 
-  for (var i = 0; i < numeros.length; numeros++) {
-    suma = suma + numeros [i]
+ var suma = 0;
+  for(var i = 0; i < numeros.length; i++) {
+    suma = suma + numeros[i];
   }
-  return suma
-
+  return suma;
 
 }
 
@@ -93,7 +93,8 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  }
+  return  agregarNumeros (resultadosTest)/resultadosTest.length
+}
 
 
 
@@ -101,14 +102,26 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  var mayor = numeros [0]
+  for (var i = 0; i < numeros.length; i++) {
+    if (numeros [i] > mayor) {
+      mayor = numeros [i]
+    }
+  } return mayor
 }
+
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0
   // Si se pasa un argumento, simplemente devuélvelo
   // Tu código:
-
+  if(arguments.length < 1) return 0;
+  var numerototal = 1;
+  for(var i = 0; i < arguments.length; i++) {
+    numerototal = numerototal * arguments[i];
+  }
+  return numerototal;
 }
 
 // No modificar nada debajo de esta línea
