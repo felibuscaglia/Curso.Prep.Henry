@@ -1,0 +1,4 @@
+for = Funciona para evaluar la expresión que quiera el programador de manera repetida; tiene dos opciones, o devuelve lo que se está buscando hasta que la condición para finalizar el bucle se cumpla, o retorna se prolonga de manera infinita. 
+&& = Es un operador lógico que evalúa expresiones y devuelve algo si todas las condiciones impuestas por el programador se cumplen; si apenas una de ellas es false, no devuelve nada, porque todas deben ser true. 
+|| = Es otro operador lógico que funciona de manera contraria a &&; si apenas una de las condiciones a cumplir es true, la función devolverá algo. No importa si la mayoría de los requerimientos son false, con un solo true basta. 
+! = Es un operador lógico que devuelve el valor booleano (true o false) opuesto de un objeto. 
