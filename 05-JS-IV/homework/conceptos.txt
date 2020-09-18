@@ -1,0 +1,5 @@
+Objeto: Es un contenedor de datos de JavaScript que te permite almacenar una enorme cantidad de información acerca de algo. 
+Propiedad: Un objeto tiene varias claves que es donde se reparte esa información que almacena; las propiedades nos dan la posibilidad de invocar esa información contenida en este contenedor de datos cuando queramos. 
+Métodos: Dentro de los objetos, una propiedad puede invocar una función. A una función almacenada en un objeto se la conoce como método. 
+Bucle for...in: Como los objetos no tiene un índice numérico, si no propiedades (clave:valor), si queremos iterar sobre ese objeto se utiliza este tipo de bucles.
+Notación de puntos vs notación de corchetes: Si queremos invocar los datos almacenados en una propiedad de un objeto, tenemos dos maneras: puntos o corchetes. El segundo es más conveniente de usar a la hora de escribir funciones, pero los dos cumplen la misma función.  
